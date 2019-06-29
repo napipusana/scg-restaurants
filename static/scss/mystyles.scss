@@ -1,0 +1,44 @@
+@charset "utf-8";
+@import "../../node_modules/bulma/bulma.sass";
+
+
+$primary: #efe167;
+$primary-invert: findColorInvert($primary);
+$twitter: #4099FF;
+$twitter-invert: findColorInvert($twitter);
+$gulf: #424F60;
+$gulf-invert: findColorInvert($gulf);
+$danger: #d9433b;
+$danger-invert: findColorInvert($danger);
+$button-disabled-background-color: hsl(217, 71%, 53%);
+$navbar-dropdown-item-hover-background-color: hsl(0, 0%, 96%);
+$navbar-item-hover-background-color: hsl(0, 0%, 96%);
+$navbar-dropdown-item-active-color: hsl(0, 0%, 96%);
+// Setup $colors to use as bulma classes (e.g. 'is-twitter')
+$colors: (
+    "white": ($white, $black),
+    "black": ($black, $white),
+    "light": ($light, $light-invert),
+    "dark": ($dark, $dark-invert),
+    "primary": ($primary, $primary-invert),
+    "info": ($info, $info-invert),
+    "success": ($success, $success-invert),
+    "warning": ($warning, $warning-invert),
+    "danger": ($danger, $danger-invert),
+    "twitter": ($twitter, $twitter-invert),
+    "gulf": ($gulf, $gulf-invert),
+   
+);
+
+// Card
+// Links
+$link: $primary;
+$link-invert: $primary-invert;
+$link-focus-border: $primary;
+// Import only what you need from Bulma
+@import "../../node_modules/bulma/sass/base/_all.sass";
+@import "../../node_modules/bulma/sass/components/_all.sass";
+@import "../../node_modules/bulma/sass/elements/_all.sass";
+@import "../../node_modules/bulma/sass/grid/_all.sass";
+@import "../../node_modules/bulma/sass/layout/_all.sass";
+@import "../../node_modules/bulma/sass/utilities/_all.sass";
