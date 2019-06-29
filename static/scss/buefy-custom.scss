@@ -1,0 +1,52 @@
+// Import Bulma's core
+@import "~bulma/sass/utilities/_all";
+
+// Set your colors
+$primary: #3c8dbc;
+$primary-invert: findColorInvert($primary);
+$twitter: #4099FF;
+$twitter-invert: findColorInvert($twitter);
+$gulf: #3c8dbc;
+$gulf-invert: findColorInvert($gulf);
+$danger: #d9433b;
+$danger-invert: findColorInvert($danger);
+$body-size: 15px;
+$button-background-color: #F0F0F0;
+$gray: hsl(0, 0%, 73);
+$gray-invert: findColorInvert($gray);
+$section: hsl(0, 0%, 86%);
+$section-invert: findColorInvert($section);
+$menu-item-hover-background-color: $grey-lighter;
+// Setup $colors to use as bulma classes (e.g. 'is-twitter')
+$colors: (
+    "white": ($white, $black),
+    "black": ($black, $white),
+    "light": ($light, $light-invert),
+    "dark": ($dark, $dark-invert),
+    "primary": ($primary, $primary-invert),
+    "info": ($info, $info-invert),
+    "success": ($success, $success-invert),
+    "warning": ($warning, $warning-invert),
+    "danger": ($danger, $danger-invert),
+    "twitter": ($twitter, $twitter-invert),
+    "gulf": ($gulf, $gulf-invert),
+    "gray": ($gray, $gray-invert),
+    "section": ($section, $section-invert),
+);
+
+// Card
+// Links
+$link: $primary;
+$link-invert: $primary-invert;
+$link-focus-border: $primary;
+// $family-primary: "DB-Heavent";
+
+// Import Bulma and Buefy styles
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
+/*@import "~bulma-steps-component/bulma-steps";
+@import "~bulma-extensions/bulma-badge/dist/css/bulma-badge";*/
+// @font-face {
+//   font-family: 'DB-Heavent';
+//   src: url('../../../../static/fonts/DB-Heavent.ttf');
+// }
