@@ -102,8 +102,6 @@ export default {
     this.getGooglePlacesAction(this.location)
     }
   }
-
-
 }
 </script>
 
