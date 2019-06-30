@@ -11,7 +11,6 @@
             placeholder="Please type your address"
             v-on:placechanged="getAddressData => selectedAddress = getAddressData"
             country="TH"
-            text="Bang Sue, Rai Khing, Sam Phran District, Nakhon Pathom, Thailand"
         >
         </vue-google-autocomplete>
         <div>
