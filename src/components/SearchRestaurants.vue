@@ -39,9 +39,7 @@
         </table>
 
       </v-card-text>
-    </v-card>
-    <!-- <div>{{ places }}</div> -->
-     {{selectedAddress.latitude+','+selectedAddress.longitude }} 
+    </v-card> 
   </section>
 </template>
 
